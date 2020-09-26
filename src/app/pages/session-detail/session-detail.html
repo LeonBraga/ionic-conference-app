@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+      <ion-back-button [defaultHref]="defaultHref" data-cy="back"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button (click)="toggleFavorite()">
+      <ion-button (click)="toggleFavorite()" data-cy="favorite">
         <ion-icon *ngIf="!isFavorite" slot="icon-only" name="star-outline"></ion-icon>
         <ion-icon *ngIf="isFavorite" slot="icon-only" name="star"></ion-icon>
       </ion-button>
